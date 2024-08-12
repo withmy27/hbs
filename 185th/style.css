@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'GowunBatang-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: rgb(56, 38, 29);
+}
+
+body {
+  background-color: rgb(245, 244, 240);
+}
+
+header {
+  z-index: 27;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(5px);
+  background-color: rgb(245, 244, 240, 0.8);
+  font-family: 'GowunBatang-Regular';
+  font-weight: 900;
+}
+
+.divider {
+  border: 1px dashed dimgray;
+  display: inline-block;
+}
+
+.menu-bar {
+  position: sticky;
+}
+
+.menu-list {
+  margin: 8px 0 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-logo {
+  margin: auto auto auto 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-title {
+  font-size: 20px;
+  display: inline;
+  margin: auto 10px;
+}
+
+.menu-item {
+  display: inline;
+  margin: 20px 30px;
+  cursor: pointer;
+}
+
+#newspaper {
+  display: inline-flex;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  mask: radial-gradient(20px at 50px 50px, transparent 98%, #000 20px, #000 22px, #f0f0f0 22px) -50px -50px;
+}
+
+footer {
+  margin-top: 100px;
+  text-align: center;
+  font-family: 'GowunBatang-Regular';
+}
