@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>HBS PDF Reader</title>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="icon" href="./hbs_logo.svg" />
+	</head>
+	<body>
+		<div id="pdf-viewer">
+			<canvas id="can-1"></canvas>
+			<canvas id="can-2"></canvas>
+		</div>
+		<div id="controls">
+			<button class="page-btn reversed-btn nonDrag" id="prev">
+				&lt;
+			</button>
+			<button class="page-btn reversed-btn nonDrag" id="next">
+				&gt;
+			</button>
+			<input type="range" id="page-slider" min="1" max="1" value="1" />
+			<div
+				style="display: inline-block; width: 100px; margin-left: 10px"
+				id="page-num"
+			></div>
+		</div>
+		<!-- <script
+			src="node_modules/pdfjs-dist/build/pdf.mjs"
+			type="module"
+		></script> -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.8.69/pdf.min.mjs"
+			type="module"
+		></script>
+		<script src="main.min.js" type="module"></script>
+	</body>
+</html>
